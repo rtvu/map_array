@@ -1,0 +1,2 @@
+defmodule MapArray do
+end
