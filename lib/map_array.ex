@@ -502,8 +502,10 @@ defmodule MapArray do
   end
 
   defimpl Inspect, for: MapArray do
-    def inspect(map_array, _opts) do
-      "#MapArray<#{map_array |> MapArray.to_list() |> inspect()}>"
+    import Inspect.Algebra, only: [concat: 1, to_doc: 2]
+
+    def inspect(map_array, opts) do
+      concat(["#MapArray<", to_doc(MapArray.to_list(map_array), opts), ">"])
     end
   end
 end
