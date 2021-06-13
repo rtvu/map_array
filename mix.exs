@@ -7,7 +7,12 @@ defmodule MapArray.MixProject do
       version: "0.1.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      name: "MapArray",
+      source_url: "https://github.com/rtvu/map_array",
+      docs: [
+        main: "MapArray"
+      ]
     ]
   end
 
@@ -19,6 +24,7 @@ defmodule MapArray.MixProject do
 
   defp deps do
     [
+      {:ex_doc, "~> 0.24", only: :dev, runtime: false}
     ]
   end
 end
