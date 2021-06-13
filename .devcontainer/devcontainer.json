@@ -1,0 +1,15 @@
+{
+  "name": "map_array",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "map_array-application",
+  "workspaceFolder": "/home/user/app",
+  "initializeCommand": "./generate_env",
+  "settings": {
+    "elixirLS.suggestSpecs": false,
+    "elixirLS.signatureAfterComplete": false,
+    "elixirLS.fetchDeps": false
+  },
+  "extensions": [
+    "jakebecker.elixir-ls"
+  ]
+}

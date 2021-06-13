@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  map_array-application:
+    build:
+      context: .
+      args:
+        USER_ID: "$USER_ID"
+        GROUP_ID: "$GROUP_ID"
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/home/user/app
