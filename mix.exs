@@ -3,7 +3,7 @@ defmodule MapArray.MixProject do
 
   def project do
     [
-      app: :app,
+      app: :map_array,
       version: "0.1.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
